@@ -10,8 +10,6 @@ export default props => {
   const extensionVersion = manifest.version;
 
   const [hasPermission, requestPermission] = useAdditionalPermission();
-
-  );
 };
 
 const useAdditionalPermission = () => {
