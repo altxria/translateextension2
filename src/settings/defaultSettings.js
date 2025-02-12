@@ -70,52 +70,6 @@ export default [
             value: "google",
             handleChange: () => updateLangsWhenChangeTranslationApi()
           },
-          {
-            id: "translationApi",
-            title: "deeplApiLabel",
-            captions: ["deeplApiCaptionLabel"],
-            extraCaption:
-              React.createElement("p",
-                { className: "caption" },
-                React.createElement("a",
-                  {
-                    href: "https://github.com/sienori/simple-translate/wiki/How-to-register-DeepL-API",
-                    target: "_blank"
-                  },
-                  browser.i18n.getMessage("howToUseDeeplLabel"))
-              ),
-            type: "radio",
-            value: "deepl",
-            handleChange: () => updateLangsWhenChangeTranslationApi()
-          },
-          {
-            id: "deeplPlan",
-            title: "deeplPlanLabel",
-            captions: ["deeplPlanCaptionLabel"],
-            type: "select",
-            default: "deeplFree",
-            shouldShow: () => (getSettings("translationApi") === "deepl"),
-            hr: true,
-            options: [
-              {
-                name: "deeplFreeLabel",
-                value: "deeplFree"
-              },
-              {
-                name: "deeplProLabel",
-                value: "deeplPro"
-              },
-            ]
-          },
-          {
-            id: "deeplAuthKey",
-            title: "deeplAuthKeyLabel",
-            captions: ["deeplAuthKeyCaptionLabel"],
-            type: "text",
-            default: "",
-            placeholder: "00000000-0000-0000-0000-00000000000000:fx",
-            shouldShow: () => (getSettings("translationApi") === "deepl"),
-          }
         ]
       },
       {
