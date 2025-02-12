@@ -12,13 +12,6 @@ import {
 } from "src/settings/defaultColors";
 const logDir = "background/onInstalledListener";
 
-const openOptionsPage = active => {
-  browser.tabs.create({
-    url: "options/index.html#information?action=updated",
-    active: active
-  });
-};
-
 export default async details => {
   if (details.reason != "install" && details.reason != "update") return;
   log.info(logDir, "onInstalledListener()", details);
@@ -27,7 +20,6 @@ export default async details => {
   initShortcuts();
 
   const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");
-  if (isShowOptionsPage) openOptionsPage(false);
 
   // Version 2.8.0以前からのアップデート
   if (details.reason == "update" && details.previousVersion.replaceAll(".", "") < 280) {
