@@ -28,7 +28,7 @@ export default props => {
   useEffect(() => {
     // Load the ResponsiveVoice script dynamically
     const script = document.createElement("script");
-    script.src = "https://code.responsivevoice.org/responsivevoice.js";
+    script.src = "https://code.responsivevoice.org/responsivevoice.js?key=qZJhpDL1";
     script.async = true;
     script.onload = () => setIsVoiceReady(true); // Set to true when script is fully loaded
     document.body.appendChild(script);
