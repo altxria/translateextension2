@@ -3,7 +3,7 @@
     all: initial;
     position: fixed;
     overflow: hidden;
-    background-color: var(--simple-translate-main-bg);
+    background-color: white; /* Solid white background */
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     border-radius: 3px;
     z-index: 2147483646;
@@ -54,20 +54,21 @@
         }
 
         a {
-          color: var(--simple-translate-highlight);
+          color: #5595ff; /* Highlight color */
           cursor: pointer;
         }
 
         &::-moz-selection {
-          background: var(--simple-translate-line);
+          background: #ededf0; /* Line color */
         }
 
         .simple-translate-result {
-          color: var(--simple-translate-main-text);
+          color: black; /* Main text color */
         }
+
         .simple-translate-candidate,
         .simple-translate-error {
-          color: var(--simple-translate-sub-text);
+          color: #737373; /* Sub-text color */
           margin-top: 1em;
           &:empty {
             margin-top: 0;
