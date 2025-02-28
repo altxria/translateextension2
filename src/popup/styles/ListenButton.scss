@@ -1,15 +1,15 @@
 .listenButton {
   padding: 0;
   border: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   cursor: pointer;
 
   svg {
     height: 16px;
     width: 16px;
-    fill: var(--sub-text);
+    fill: grey;
     &:hover {
-      fill: var(--highlight);
+      fill: black;
     }
   }
 }
