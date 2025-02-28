@@ -8,10 +8,6 @@
     "storage",
     "contextMenus"
   ],
-  "options_ui": {
-    "page": "options/index.html",
-    "open_in_tab": true
-  },
   "icons": {
     "512": "icons/512.png",
     "128": "icons/128.png",
