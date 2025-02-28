@@ -57,7 +57,6 @@
     --info: #1471d0;
   }
 }
-
 html {
   scrollbar-width: none;
 }
@@ -70,7 +69,8 @@ body {
   overflow: hidden;
   width: 100%;
   min-width: 348px;
-  background-color: var(--main-bg);
+  background-color: white; /* Solid white background */
+  color: black; /* Black text color */
 
   #root {
     height: 100%;
@@ -78,12 +78,12 @@ body {
 
   hr {
     border: none;
-    border-top: solid 1px var(--button);
+    border-top: solid 1px #d7d7db; /* Greyish border */
     height: 1px;
     margin: 0px 10px;
   }
 
   ::-moz-selection {
-    background: var(--line);
+    background: #ededf0; /* Greyish background for selection */
   }
 }
