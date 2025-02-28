@@ -3,7 +3,7 @@
   justify-content: center;
 
   .copiedText {
-    color: var(--sub-text);
+    color: black;
     font-size: 12px;
     margin-inline-end: 5px;
     -moz-user-select: none;
@@ -12,15 +12,15 @@
   .copyButton {
     padding: 0;
     border: 0;
-    background-color: var(--main-bg);
+    background-color: white;
     cursor: pointer;
 
     svg {
       height: 16px;
       width: 16px;
-      fill: var(--sub-text);
+      fill: grey;
       &:hover {
-        fill: var(--highlight);
+        fill: black;
       }
     }
   }
