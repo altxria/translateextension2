@@ -1,9 +1,9 @@
 #simple-translate {
   .simple-translate-button {
     all: initial;
-    background-color: var(--simple-translate-main-bg);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    border-radius: 10%;
+    background-color: white; /* Solid white background */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); /* Greyish shadow */
+    border-radius: 0%; /* No rounded corners */
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
