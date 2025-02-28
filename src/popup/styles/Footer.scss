@@ -10,7 +10,7 @@
     a {
       font-style: normal;
       text-decoration: none;
-      color: var(--highlight);
+      color: black;
       cursor: pointer;
       &:hover {
         text-decoration: underline;
@@ -30,38 +30,36 @@
       inset-inline-end: 7px;
       width: 5px;
       height: 5px;
-
       transform: rotate(45deg);
 
       .popup-page-rtl-language & {
         transform: rotate(-45deg);
       }
 
-      border-bottom: 2px solid var(--sub-text);
-      border-inline-end: 2px solid var(--sub-text);
-
+      border-bottom: 2px solid grey;
+      border-inline-end: 2px solid grey;
       transition: border-color 100ms ease-out;
     }
     &:hover::before {
-      border-bottom: 2px solid var(--highlight);
-      border-inline-end: 2px solid var(--highlight);
+      border-bottom: 2px solid black;
+      border-inline-end: 2px solid black;
     }
 
     select {
       -moz-appearance: none;
       -webkit-appearance: none;
       text-overflow: ellipsis;
-      background-color: var(--main-bg);
-      color: var(--main-text);
-      border: var(--button) solid 1px;
-      border-radius: 2px;
+      background-color: white;
+      color: black;
+      border: 1px solid grey;
+      border-radius: 0;
       padding: 3px 5px;
       padding-inline-end: 20px;
       width: 100%;
       transition: border-color 100ms ease-out;
-      scrollbar-color: var(--button) var(--line);
+      scrollbar-color: grey white;
       &:hover {
-        border-color: var(--highlight);
+        border-color: black;
       }
     }
   }
