@@ -5,12 +5,6 @@
   "extDescription": {
     "message": "will translate i think (hopefully)"
   },
-  "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
-  },
-  "donateLabel": {
-    "message": "Donate"
-  },
   "enableOnThisPage": {
     "message": "Enable translation on this page"
   },
