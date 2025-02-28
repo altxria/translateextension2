@@ -6,8 +6,8 @@
     font: inherit;
     resize: none;
     overflow: auto;
-    color: var(--main-text);
-    background-color: var(--main-bg);
+    color: black;
+    background-color: white;
 
     box-sizing: border-box;
     width: 100%;
@@ -17,15 +17,15 @@
 
     margin: 0;
     padding: 10px;
-    border: solid 1px var(--button);
-    border-radius: 2px;
+    border: solid 1px grey;
+    border-radius: 0;
     outline: none;
     transition: border-color 100ms ease-out;
   }
 
   textarea:hover,
   textarea:focus {
-    border-color: var(--highlight);
+    border-color: black;
   }
 
   .listen {
