@@ -1,6 +1,6 @@
 #header {
   padding: 10px;
-  background-color: var(--line);
+  background-color: white;
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
@@ -8,11 +8,12 @@
   justify-content: space-between;
   -moz-user-select: none;
   -webkit-user-select: none;
+  border-bottom: 1px solid grey;
 
   .title {
     font-size: 15px;
     font-weight: 400;
-    color: var(--sub-text);
+    color: black;
     cursor: default;
     flex-shrink: 0;
   }
@@ -34,31 +35,25 @@
         $offset-width: 18px;
         .react-toggle-track {
           height: 10px;
-          width: 50px - $offset-width;
-          background-color: var(--sub-text);
-          -webkit-box-transition: all 100ms ease;
-          -moz-box-transition: all 100ms ease;
+          width: calc(50px - 18px);
+          background-color: grey;
           transition: all 100ms ease;
         }
         .react-toggle-thumb {
           height: 16px;
           width: 16px;
           inset-inline-start: 0px;
-          -webkit-box-shadow: none;
-          -moz-box-shadow: none;
           box-shadow: none;
-          -webkit-box-transition: all 100ms ease;
-          -moz-box-transition: all 100ms ease;
           transition: all 100ms ease;
         }
 
         &.react-toggle--checked {
           .react-toggle-track {
-            background-color: var(--highlight);
+            background-color: black;
           }
           .react-toggle-thumb {
-            inset-inline-start: 34px - $offset-width;
-            border-color: var(--highlight);
+            inset-inline-start: calc(34px - 18px);
+            border-color: black;
           }
         }
         &.react-toggle--disabled {
@@ -81,7 +76,7 @@
       align-items: center;
       margin: 0px 10px;
       &:hover svg {
-        fill: var(--confirm);
+        fill: black;
       }
     }
 
@@ -89,7 +84,7 @@
       display: flex;
       align-items: center;
       &:hover svg {
-        fill: var(--highlight);
+        fill: black;
         transform: rotate(90deg);
       }
     }
@@ -97,7 +92,7 @@
     svg {
       height: 18px;
       width: 18px;
-      fill: var(--sub-text);
+      fill: grey;
       transition: fill 100ms, transform 300ms ease;
     }
   }
